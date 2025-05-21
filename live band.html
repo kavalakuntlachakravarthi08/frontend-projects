@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Band Music</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1581322971192-bfa0a697c498?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .band-info {
+      text-align: center;
+    }
+
+    .band-info h2 {
+      margin-bottom: 15px;
+      color: #f39c12;
+    }
+
+    .events {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .event {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .event:hover {
+      background-color: #333;
+    }
+
+    .event h3 {
+      margin-bottom: 10px;
+      color: #e67e22;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #e67e22;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #d35400;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Live Band Music Night</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="band-info">
+    <h2>About the Band</h2>
+    <p>We are a high-energy live band that brings rock, blues, and indie music to life. Performing across venues since 2015, we keep the crowd pumped and the music alive!</p>
+  </section>
+
+  <section id="events">
+    <h2 style="text-align: center; color: #f39c12;">Upcoming Events</h2>
+    <div class="events">
+      <div class="event">
+        <h3>Rock Fest 2025</h3>
+        <p>June 15, 2025 - New York City</p>
+      </div>
+      <div class="event">
+        <h3>Summer Vibes Tour</h3>
+        <p>July 5, 2025 - Los Angeles</p>
+      </div>
+      <div class="event">
+        <h3>Indie Nights</h3>
+        <p>August 10, 2025 - Chicago</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align: center; color: #f39c12;">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea rows="4" placeholder="Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Live Band Music. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
